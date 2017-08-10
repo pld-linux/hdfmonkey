@@ -1,11 +1,11 @@
 Summary:	A Swiss Army Knife for manipulating HDF disk images
 Name:		hdfmonkey
-Version:	0.3
+Version:	0.4
 Release:	1
 License:	GPL v3+
 Group:		Applications/System
-Source0:	ftp://ftp.untergrund.net/users/gasman/zx/hdfmonkey/%{name}-%{version}.tar.gz
-# Source0-md5:	983dee422a00c1df8357d212462e5e9e
+Source0:	http://files.zxdemo.org/gasman/speccy/hdfmonkey/%{name}-%{version}.tar.gz
+# Source0-md5:	77324a62834d050038a39309e2bbf687
 URL:		http://github.com/gasman/hdfmonkey
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -42,5 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc CHANGELOG README
 %attr(755,root,root) %{_bindir}/hdfmonkey
